@@ -1,9 +1,9 @@
 const express = require('express');
 const User = require('../models/user');
 const router = new express.Router();
+const auth = require('../middleware/auth')
 
-
-router.post('/users/register', async (req,res) => {
+router.post('/users/register',async (req,res) => {
     const user = new User(req.body);
 
     try{
@@ -24,6 +24,11 @@ router.post('/users/login', async (req,res) => {
         res.status(400).send();
     }
 })
+
+router.get('/users/me',auth, async (req,res) => {
+   res.send(req.user);
+})
+
 
 
 
