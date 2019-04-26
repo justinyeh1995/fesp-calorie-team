@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css?family=Staatliches");
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker|Staatliches");
+@import url("https://fonts.googleapis.com/css?family=Changa");
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+/*.blurredcover {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(31, 29, 29);
+  opacity: 0.6;
+  z-index: 2;
+}*/
+body {
+  padding: auto;
+  margin: auto;
+  /*background: -webkit-linear-gradient(to right, #ed213a,#93291e);  /* Chrome 10-25, Safari 5.1-6 */
+  /*background: linear-gradient(#ed213a,#93291e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: url("http://www.berkeleywellness.com/sites/default/files/iStock-1067777244.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+/*.blurredcover{
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-color:rgb(31, 29, 29);
+      opacity: 0.6;
+      z-index:2;
+  }*/
+
+.container {
+  background: rgb(110, 116, 78); /* fallback for old browsers */
+  background-color: rgba(255, 251, 251, 0.63); /* Chrome 10-25, Safari 5.1-6 */
+  background-color: rgba(
+    254,
+    254,
+    255,
+    0.747
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  /*align-items: center;*/
+  z-index: 3;
+  border-radius: 7px;
+  box-shadow: 5px 5px 5px;
+}
+.row {
+  padding: 0;
+  margin: 5%;
+  margin-top: 10%;
+  width: inherit;
+  height: initial;
+}
+.header h1 {
+  color: rgb(90, 89, 89);
+}
+.header {
+  font-family: "Permanent Marker", cursive;
+  text-align: center;
+  margin-top: 10%;
+}
+.user {
+  position: relative;
+  display: inline-block;
+  width: -webkit-fill-available;
+  /*z-index: 4;*/
+  margin-top: 3%;
+}
+i {
+  position: absolute;
+  left: 800ex;
+  top: 50%;
+  transform: translateY(-50%);
+}
+i:hover {
+  background-color: black;
+}
+.user input {
+  font-family: "Changa", sans-serif;
+  text-indent: 20px;
+  width: inherit;
+}
+.password {
+  position: relative;
+  display: inline-block;
+  width: -webkit-fill-available;
+  margin-top: 8.7%;
+}
+.password input {
+  font-family: "Changa", sans-serif;
+  text-indent: 20px;
+  width: inherit;
+}
+.button {
+  font-family: "Press Start 2P", cursive;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.btn-lg {
+  width: 100%;
+  background-color: rgba(173, 22, 30, 0.959);
+  color: rgb(241, 238, 233);
+  border: none;
+  cursor: pointer;
+  transition-duration: 0.45s;
+}
+.button .btn-lg:hover {
+  color: rgb(253, 253, 253);
+  background-color: rgba(211, 19, 29, 0.897);
+  transform: scale(1.1, 1.1);
+}
+.login_signup {
+  font-size: 0.2rem;
+  text-align: center;
+  margin-top: 7%;
+}
+.sign {
+  color: rgba(88, 86, 86, 0.959);
+}
+.sign:hover {
+  color: rgba(143, 90, 114, 0.959);
+}
